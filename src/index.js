@@ -1,8 +1,8 @@
-const express  = require('express')
+const express  = require('express');
 const http = require('http');
 const path = require('path')
 const socketio = require('socket.io')
-const publicDirectoryPath = path.join(__dirname, '../public')
+const publicDirectoryPath = path.join(__dirname, '../public');
 const Filter = require("bad-words")
 const {generateMessage, generateLocationMessage} = require('./utils/messages')
 const {  addUser,removeUser,getUser,getUsersInRoom} = require('./utils/users')
